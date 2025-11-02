@@ -1,0 +1,31 @@
+# Distribution files
+*.zip
+*.crx
+mass-link-opener-*.zip
+
+# Development files
+generate-icons.html
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-*
+
+# Node modules (if you add build tools later)
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store?
+ehthumbs.db
+Icon?

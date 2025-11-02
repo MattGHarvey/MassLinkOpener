@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Link Opener</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Mass Link Opener</h2>
+            <p>Find and open links containing a phrase</p>
+        </div>
+        
+        <div class="input-section">
+            <label for="phrase-input">Search phrase:</label>
+            <input type="text" id="phrase-input" placeholder="Enter phrase to search for..." />
+        </div>
+        
+        <div class="options-section">
+            <label>
+                <input type="checkbox" id="case-sensitive" />
+                Case sensitive search
+            </label>
+            <label>
+                <input type="checkbox" id="debug-mode" />
+                Debug mode (show console logs)
+            </label>
+        </div>
+        
+        <div class="button-section">
+            <button id="find-links" class="primary-btn">Find Links</button>
+            <button id="open-links" class="secondary-btn" disabled>Open All Links</button>
+        </div>
+        
+        <div class="results-section" id="results" style="display: none;">
+            <h3>Found Links:</h3>
+            <div id="links-list"></div>
+            <div class="stats">
+                <span id="link-count">0</span> links found
+            </div>
+        </div>
+        
+        <div class="status" id="status"></div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
